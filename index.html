@@ -156,21 +156,21 @@
         <td>사용자 삭제 시까지</td>
       </tr>
       <tr>
-        <td>이름 (최대 15자)</td>
+        <td>이름</td>
         <td>사용자 직접 입력</td>
         <td>연락처 식별</td>
         <td>사용자 삭제 시까지</td>
       </tr>
       <tr>
-        <td>메모 (최대 500자)</td>
+        <td>메모</td>
         <td>사용자 직접 입력</td>
         <td>거래 관계 메모</td>
         <td>사용자 삭제 시까지</td>
       </tr>
       <tr>
-        <td>태그 / 만료일</td>
+        <td>태그 등 부가 정보</td>
         <td>사용자 직접 입력</td>
-        <td>분류 및 자동 삭제</td>
+        <td>분류 및 관리</td>
         <td>사용자 삭제 시까지</td>
       </tr>
       <tr>
@@ -187,14 +187,14 @@
 <section>
   <h2>3. 개인정보의 저장 위치</h2>
   <h3>기기 내 저장 (항상)</h3>
-  <p>모든 데이터는 사용자의 iPhone에 암호화된 로컬 데이터베이스(Core Data / SQLite)로 저장됩니다. 운영자의 서버로 전송되지 않습니다.</p>
+  <p>모든 데이터는 사용자의 기기에 암호화된 로컬 데이터베이스로 저장됩니다. 운영자의 서버로 전송되지 않습니다.</p>
   <h3>iCloud 동기화 (선택)</h3>
-  <p>Solo+ 플랜 사용자가 설정에서 "iCloud 동기화"를 직접 활성화한 경우에 한해, Apple의 CloudKit 인프라를 통해 사용자의 다른 기기와 동기화됩니다. Apple의 암호화 정책이 적용되며, 운영자는 해당 데이터에 접근할 수 없습니다.</p>
+  <p>사용자가 설정에서 iCloud 동기화를 직접 활성화한 경우에 한해, Apple의 CloudKit 인프라를 통해 사용자의 다른 기기와 동기화됩니다. Apple의 암호화 정책이 적용되며, 운영자는 해당 데이터에 접근할 수 없습니다.</p>
 </section>
 
 <section>
   <h2>4. 클립보드 접근</h2>
-  <p>앱 실행 시 클립보드에 전화번호 형식의 텍스트가 있는 경우 감지 배너를 표시합니다. 이 기능은 기본적으로 비활성화되어 있으며, 설정에서 언제든 끌 수 있습니다. 클립보드 내용은 기기 외부로 전송되지 않습니다.</p>
+  <p>앱은 클립보드에서 전화번호 형식의 텍스트를 감지하여 빠른 등록을 제안할 수 있습니다. 이 기능은 설정에서 끌 수 있으며, 클립보드 내용은 기기 외부로 전송되지 않습니다.</p>
 </section>
 
 <section>
@@ -217,8 +217,8 @@
   <ul>
     <li><strong>열람</strong>: 앱 내 목록에서 직접 확인 가능</li>
     <li><strong>수정</strong>: 앱 내 편집 기능으로 직접 수정 가능</li>
-    <li><strong>삭제</strong>: 항목 스와이프 삭제 또는 설정 → "모든 데이터 삭제"</li>
-    <li><strong>이동</strong>: 설정 → CSV 내보내기 (Plus+ 이상)</li>
+    <li><strong>삭제</strong>: 앱 내에서 직접 삭제 가능</li>
+    <li><strong>이동</strong>: 앱 내 내보내기 기능 이용 (일부 유료 플랜)</li>
     <li><strong>처리 정지 요청</strong>: <a href="mailto:hello@tippytappy.kr">hello@tippytappy.kr</a>로 문의</li>
   </ul>
 </section>
@@ -286,21 +286,21 @@
         <td>Until user deletes</td>
       </tr>
       <tr>
-        <td>Name (max 15 chars)</td>
+        <td>Name</td>
         <td>User input</td>
         <td>Contact identification</td>
         <td>Until user deletes</td>
       </tr>
       <tr>
-        <td>Memo (max 500 chars)</td>
+        <td>Memo</td>
         <td>User input</td>
         <td>Business relationship notes</td>
         <td>Until user deletes</td>
       </tr>
       <tr>
-        <td>Tags / Expiration date</td>
+        <td>Tags and other metadata</td>
         <td>User input</td>
-        <td>Categorization &amp; auto-deletion</td>
+        <td>Categorization &amp; management</td>
         <td>Until user deletes</td>
       </tr>
       <tr>
@@ -317,14 +317,14 @@
 <section>
   <h2>3. Where Data Is Stored</h2>
   <h3>On-Device Storage (always)</h3>
-  <p>All data is stored in an encrypted local database (Core Data / SQLite) on your iPhone. It is never transmitted to the Operator's servers.</p>
+  <p>All data is stored in an encrypted local database on your device. It is never transmitted to the Operator's servers.</p>
   <h3>iCloud Sync (optional)</h3>
-  <p>If you are on the Solo+ plan and explicitly enable "iCloud Sync" in Settings, data is synced across your devices through Apple's CloudKit infrastructure. Apple's encryption policies apply; the Operator cannot access this data.</p>
+  <p>If you explicitly enable iCloud Sync in Settings, data is synced across your devices through Apple's CloudKit infrastructure. Apple's encryption policies apply; the Operator cannot access this data.</p>
 </section>
 
 <section>
   <h2>4. Clipboard Access</h2>
-  <p>When you open the app, it may detect a phone number format in your clipboard and display a suggestion banner. This feature is disabled by default and can be turned off in Settings at any time. Clipboard contents are never sent outside your device.</p>
+  <p>The app may detect a phone number format in your clipboard and suggest quick registration. This feature can be turned off in Settings. Clipboard contents are never sent outside your device.</p>
 </section>
 
 <section>
@@ -347,8 +347,8 @@
   <ul>
     <li><strong>Access</strong>: View all entries directly in the app</li>
     <li><strong>Correction</strong>: Edit any entry using the in-app edit function</li>
-    <li><strong>Deletion</strong>: Swipe to delete individual entries, or go to Settings → "Delete All Data"</li>
-    <li><strong>Portability</strong>: Settings → Export as CSV (Plus+ and above)</li>
+    <li><strong>Deletion</strong>: Delete entries directly within the app</li>
+    <li><strong>Portability</strong>: Export your data using the in-app export feature (certain paid plans)</li>
     <li><strong>Restriction requests</strong>: Contact <a href="mailto:hello@tippytappy.kr">hello@tippytappy.kr</a></li>
   </ul>
 </section>
