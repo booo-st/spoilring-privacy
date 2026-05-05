@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 · Privacy Policy — Spoilring</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --section-bg: #f9fafb;
+      font-size: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f0f;
+        --fg: #f0f0f0;
+        --muted: #9ca3af;
+        --border: #2d2d2d;
+        --accent: #60a5fa;
+        --section-bg: #1a1a1a;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      padding: 0 1rem 4rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      padding: 2.5rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+    .app-name {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .meta { font-size: 0.85rem; color: var(--muted); }
+    .lang-divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 3rem 0 2rem;
+    }
+    .lang-divider::before, .lang-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .lang-divider span {
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    section { margin-bottom: 2rem; }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 1rem 0 0.4rem; }
+    p { margin-bottom: 0.6rem; color: var(--fg); }
+    ul, ol { padding-left: 1.4rem; margin-bottom: 0.6rem; }
+    li { margin-bottom: 0.3rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin-bottom: 0.8rem;
+    }
+    th {
+      background: var(--section-bg);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+    }
+    td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .highlight {
+      background: var(--section-bg);
+      border-left: 3px solid var(--accent);
+      padding: 0.75rem 1rem;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 0.8rem;
+      font-size: 0.9rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">Spoilring</div>
+  <h1>개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 5월 5일 &nbsp;·&nbsp; 최종 수정: 2026년 5월 5일</p>
+</header>
+
+<!-- ── KOREAN VERSION ── -->
+<div class="highlight">
+  Spoilring은 사용자의 데이터를 개발자 서버로 전송하지 않습니다. 모든 데이터는 사용자의 기기에 저장되며, iCloud 동기화는 사용자가 직접 선택한 경우에만 Apple의 인프라를 경유합니다.
+</div>
+
+<section>
+  <h2>1. 개인정보 처리 목적</h2>
+  <p>티피태피(이하 "운영자")는 <strong>Spoilring</strong> 앱 서비스(이하 "서비스") 제공을 위해 아래와 같은 목적으로 개인정보를 처리합니다.</p>
+  <ul>
+    <li>수신 전화 발신자 이름 표시 (iOS CallKit)</li>
+    <li>고객·연락처 메모 저장 및 관리</li>
+    <li>앱 내 구독 서비스 제공 (Apple 인앱 결제)</li>
+    <li>사용자 선택 시 다기기 동기화 (iCloud)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>2. 처리하는 개인정보 항목</h2>
+  <table>
+    <thead>
+      <tr><th>항목</th><th>수집 주체</th><th>목적</th><th>보유 기간</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>전화번호</td>
+        <td>사용자 직접 입력 또는 CSV 가져오기</td>
+        <td>CallKit 발신자 표시</td>
+        <td>사용자 삭제 시까지</td>
+      </tr>
+      <tr>
+        <td>이름 (최대 15자)</td>
+        <td>사용자 직접 입력</td>
+        <td>연락처 식별</td>
+        <td>사용자 삭제 시까지</td>
+      </tr>
+      <tr>
+        <td>메모 (최대 500자)</td>
+        <td>사용자 직접 입력</td>
+        <td>거래 관계 메모</td>
+        <td>사용자 삭제 시까지</td>
+      </tr>
+      <tr>
+        <td>태그 / 만료일</td>
+        <td>사용자 직접 입력</td>
+        <td>분류 및 자동 삭제</td>
+        <td>사용자 삭제 시까지</td>
+      </tr>
+      <tr>
+        <td>앱 설정값<br>(구독 티어, 기능 on/off)</td>
+        <td>자동 생성 (기기 내 저장)</td>
+        <td>서비스 기능 제공</td>
+        <td>앱 삭제 시까지</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>위 항목 외에 위치, 카메라, 마이크, 광고 식별자, 행동 추적 데이터는 수집하지 않습니다.</p>
+</section>
+
+<section>
+  <h2>3. 개인정보의 저장 위치</h2>
+  <h3>기기 내 저장 (항상)</h3>
+  <p>모든 데이터는 사용자의 iPhone에 암호화된 로컬 데이터베이스(Core Data / SQLite)로 저장됩니다. 운영자의 서버로 전송되지 않습니다.</p>
+  <h3>iCloud 동기화 (선택)</h3>
+  <p>Solo+ 플랜 사용자가 설정에서 "iCloud 동기화"를 직접 활성화한 경우에 한해, Apple의 CloudKit 인프라를 통해 사용자의 다른 기기와 동기화됩니다. Apple의 암호화 정책이 적용되며, 운영자는 해당 데이터에 접근할 수 없습니다.</p>
+</section>
+
+<section>
+  <h2>4. 클립보드 접근</h2>
+  <p>앱 실행 시 클립보드에 전화번호 형식의 텍스트가 있는 경우 감지 배너를 표시합니다. 이 기능은 기본적으로 비활성화되어 있으며, 설정에서 언제든 끌 수 있습니다. 클립보드 내용은 기기 외부로 전송되지 않습니다.</p>
+</section>
+
+<section>
+  <h2>5. 개인정보 제3자 제공</h2>
+  <p>운영자는 사용자의 개인정보를 제3자에게 제공하지 않습니다. 단, 아래의 경우는 사용자가 직접 선택한 Apple 서비스 경유이므로 제3자 제공에 해당하지 않습니다.</p>
+  <ul>
+    <li><strong>Apple App Store (인앱 결제)</strong>: 구독 결제 및 영수증 검증은 Apple Inc.가 처리합니다. <a href="https://www.apple.com/legal/privacy/ko/" target="_blank">Apple 개인정보 처리방침</a></li>
+    <li><strong>Apple CloudKit (iCloud 동기화)</strong>: 사용자가 iCloud 동기화를 활성화한 경우에만 해당됩니다.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6. 개인정보 처리 위탁</h2>
+  <p>운영자는 현재 개인정보 처리를 외부 업체에 위탁하지 않습니다.</p>
+</section>
+
+<section>
+  <h2>7. 정보주체의 권리</h2>
+  <p>사용자는 언제든지 다음 권리를 행사할 수 있습니다.</p>
+  <ul>
+    <li><strong>열람</strong>: 앱 내 목록에서 직접 확인 가능</li>
+    <li><strong>수정</strong>: 앱 내 편집 기능으로 직접 수정 가능</li>
+    <li><strong>삭제</strong>: 항목 스와이프 삭제 또는 설정 → "모든 데이터 삭제"</li>
+    <li><strong>이동</strong>: 설정 → CSV 내보내기 (Plus+ 이상)</li>
+    <li><strong>처리 정지 요청</strong>: <a href="mailto:hello@tippytappy.kr">hello@tippytappy.kr</a>로 문의</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. 개인정보의 파기</h2>
+  <p>앱을 삭제하면 기기 내 모든 데이터가 함께 삭제됩니다. iCloud 동기화를 사용한 경우, Apple 계정 설정에서 iCloud Drive 내 Spoilring 데이터를 추가로 삭제할 수 있습니다. 운영자가 보유하는 서버 데이터는 없습니다.</p>
+</section>
+
+<section>
+  <h2>9. 자동화된 의사결정</h2>
+  <p>운영자는 사용자 프로파일링이나 자동화된 의사결정을 수행하지 않습니다.</p>
+</section>
+
+<section>
+  <h2>10. 개인정보 보호책임자</h2>
+  <table>
+    <tbody>
+      <tr><th>구분</th><td>내용</td></tr>
+      <tr><th>사업자명</th><td>티피태피</td></tr>
+      <tr><th>개인정보 보호책임자</th><td>티피태피 대표</td></tr>
+      <tr><th>연락처</th><td><a href="mailto:hello@tippytappy.kr">hello@tippytappy.kr</a></td></tr>
+    </tbody>
+  </table>
+  <p>개인정보 관련 문의는 위 이메일로 연락주시면 <strong>영업일 기준 3일 이내</strong> 답변드립니다.</p>
+</section>
+
+<section>
+  <h2>11. 개인정보처리방침 변경</h2>
+  <p>본 방침이 변경되는 경우, 앱 업데이트 릴리즈 노트 및 본 페이지를 통해 사전 공지합니다. 중요한 변경(수집 항목 추가, 제3자 제공 신규 등)은 시행일 최소 7일 전에 고지합니다.</p>
+</section>
+
+<!-- ── ENGLISH VERSION ── -->
+<div class="lang-divider"><span>English</span></div>
+
+<h1 style="font-size:1.6rem;font-weight:700;margin-bottom:0.5rem;">Privacy Policy</h1>
+<p class="meta" style="font-size:0.85rem;color:var(--muted);margin-bottom:2rem;">Effective: May 5, 2026 &nbsp;·&nbsp; Last updated: May 5, 2026</p>
+
+<div class="highlight">
+  Spoilring does not transmit your data to any developer server. All data is stored on your device. iCloud sync is handled entirely by Apple's infrastructure and is only activated at your explicit request.
+</div>
+
+<section>
+  <h2>1. Purpose of Processing</h2>
+  <p>TippyTappy (the "Operator") processes personal information solely to provide the <strong>Spoilring</strong> app service, including:</p>
+  <ul>
+    <li>Displaying caller names on incoming calls via iOS CallKit</li>
+    <li>Storing and managing contact memos</li>
+    <li>Providing subscription services via Apple In-App Purchase</li>
+    <li>Multi-device sync via iCloud (when opted in by the user)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>2. Personal Information Collected</h2>
+  <table>
+    <thead>
+      <tr><th>Item</th><th>Source</th><th>Purpose</th><th>Retention</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Phone number</td>
+        <td>User input or CSV import</td>
+        <td>CallKit caller display</td>
+        <td>Until user deletes</td>
+      </tr>
+      <tr>
+        <td>Name (max 15 chars)</td>
+        <td>User input</td>
+        <td>Contact identification</td>
+        <td>Until user deletes</td>
+      </tr>
+      <tr>
+        <td>Memo (max 500 chars)</td>
+        <td>User input</td>
+        <td>Business relationship notes</td>
+        <td>Until user deletes</td>
+      </tr>
+      <tr>
+        <td>Tags / Expiration date</td>
+        <td>User input</td>
+        <td>Categorization &amp; auto-deletion</td>
+        <td>Until user deletes</td>
+      </tr>
+      <tr>
+        <td>App settings<br>(subscription tier, feature flags)</td>
+        <td>Auto-generated, stored on device</td>
+        <td>Service functionality</td>
+        <td>Until app is deleted</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>We do not collect location, camera, microphone, advertising identifier, or behavioral tracking data.</p>
+</section>
+
+<section>
+  <h2>3. Where Data Is Stored</h2>
+  <h3>On-Device Storage (always)</h3>
+  <p>All data is stored in an encrypted local database (Core Data / SQLite) on your iPhone. It is never transmitted to the Operator's servers.</p>
+  <h3>iCloud Sync (optional)</h3>
+  <p>If you are on the Solo+ plan and explicitly enable "iCloud Sync" in Settings, data is synced across your devices through Apple's CloudKit infrastructure. Apple's encryption policies apply; the Operator cannot access this data.</p>
+</section>
+
+<section>
+  <h2>4. Clipboard Access</h2>
+  <p>When you open the app, it may detect a phone number format in your clipboard and display a suggestion banner. This feature is disabled by default and can be turned off in Settings at any time. Clipboard contents are never sent outside your device.</p>
+</section>
+
+<section>
+  <h2>5. Third-Party Disclosure</h2>
+  <p>The Operator does not share your personal information with third parties. The following Apple services are used only when you choose to engage them:</p>
+  <ul>
+    <li><strong>Apple App Store (In-App Purchase)</strong>: Subscription billing and receipt validation are handled by Apple Inc. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
+    <li><strong>Apple CloudKit (iCloud Sync)</strong>: Only applies when you have enabled iCloud sync.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6. Processing Delegation</h2>
+  <p>The Operator does not delegate personal information processing to any external service provider.</p>
+</section>
+
+<section>
+  <h2>7. Your Rights</h2>
+  <p>You may exercise the following rights at any time:</p>
+  <ul>
+    <li><strong>Access</strong>: View all entries directly in the app</li>
+    <li><strong>Correction</strong>: Edit any entry using the in-app edit function</li>
+    <li><strong>Deletion</strong>: Swipe to delete individual entries, or go to Settings → "Delete All Data"</li>
+    <li><strong>Portability</strong>: Settings → Export as CSV (Plus+ and above)</li>
+    <li><strong>Restriction requests</strong>: Contact <a href="mailto:hello@tippytappy.kr">hello@tippytappy.kr</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. Data Deletion</h2>
+  <p>Deleting the app removes all locally stored data. If you used iCloud sync, you can additionally delete Spoilring data from your Apple account's iCloud Drive settings. The Operator holds no server-side copies of your data.</p>
+</section>
+
+<section>
+  <h2>9. Automated Decision-Making</h2>
+  <p>The Operator does not perform profiling or automated decision-making based on your data.</p>
+</section>
+
+<section>
+  <h2>10. Privacy Contact</h2>
+  <table>
+    <tbody>
+      <tr><th>Business Name</th><td>TippyTappy</td></tr>
+      <tr><th>Privacy Officer</th><td>TippyTappy Representative</td></tr>
+      <tr><th>Contact</th><td><a href="mailto:hello@tippytappy.kr">hello@tippytappy.kr</a></td></tr>
+    </tbody>
+  </table>
+  <p>We respond to privacy inquiries within <strong>3 business days</strong>.</p>
+</section>
+
+<section>
+  <h2>11. Policy Updates</h2>
+  <p>If this policy changes, we will notify you via app update release notes and this page. Material changes (new data types collected, new third-party sharing, etc.) will be announced at least 7 days before taking effect.</p>
+</section>
+
+<footer>
+  <p>© 2026 TippyTappy &nbsp;·&nbsp; <a href="https://spoilring-terms.tippytappy.kr">이용약관 / Terms of Service</a> &nbsp;·&nbsp; <a href="mailto:hello@tippytappy.kr">hello@tippytappy.kr</a></p>
+</footer>
+
+</body>
+</html>
