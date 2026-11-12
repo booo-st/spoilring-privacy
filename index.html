@@ -123,7 +123,7 @@
 <header>
   <div class="app-name">Spoilring</div>
   <h1>개인정보처리방침</h1>
-  <p class="meta">시행일: 2026년 10월 21일 &nbsp;·&nbsp; 최초 시행: 2026년 5월 5일</p>
+  <p class="meta">시행일: 2026년 11월 19일 &nbsp;·&nbsp; 최초 시행: 2026년 5월 5일</p>
 </header>
 
 <!-- ── KOREAN VERSION ── -->
@@ -174,9 +174,9 @@
         <td>사용자 삭제 시까지 (※)</td>
       </tr>
       <tr>
-        <td>구매 기록<br>(거래 ID, 상품, 구매일, 기기 식별자)</td>
+        <td>구매 기록<br>(거래 ID, 상품, 구매일, 환불 여부, 기기 식별자)</td>
         <td>슬롯팩 결제 시 자동 생성</td>
-        <td>구매 슬롯 복원</td>
+        <td>구매 슬롯 복원 및 환불 반영</td>
         <td>기기 Keychain 및 사용자 iCloud에 보관, 사용자가 삭제할 때까지</td>
       </tr>
       <tr>
@@ -197,8 +197,8 @@
   <p>모든 데이터는 사용자의 기기에 암호화된 로컬 데이터베이스로 저장됩니다. 운영자의 서버로 전송되지 않습니다.</p>
   <h3>iCloud 동기화 (기본 사용, 해제 가능)</h3>
   <p>iCloud에 로그인된 기기에서는 iCloud 동기화가 기본으로 켜져 있으며, Apple의 CloudKit 인프라를 통해 사용자의 다른 기기와 동기화됩니다. 동기화된 데이터는 사용자 본인의 iCloud 개인 저장소에 저장되고 Apple의 암호화 정책이 적용되며, 운영자는 해당 데이터에 접근할 수 없습니다. 앱의 설정 › iCloud 동기화에서 언제든 끌 수 있습니다.</p>
-  <h3>업데이트 확인</h3>
-  <p>앱 실행 시 최신 버전 여부를 확인하기 위해 Apple App Store에 앱 식별자(번들 ID)만으로 버전 정보를 조회합니다. 이 과정에서 사용자의 개인정보는 전송되지 않습니다.</p>
+  <h3>업데이트 확인 및 앱 설정</h3>
+  <p>앱 실행 시 업데이트가 필요한지 확인하기 위해 Apple App Store에 앱 식별자(번들 ID)로 최신 버전 정보를 조회하고, Apple CloudKit 공개 저장소에서 운영자가 정한 최소 지원 버전과 등록 가능 건수 한도 등 앱 설정을 읽어 옵니다. 두 조회 모두 정보를 읽기만 하며, 이 과정에서 사용자의 개인정보는 전송되지 않습니다.</p>
 </section>
 
 <section>
@@ -269,7 +269,7 @@
 <div class="lang-divider"><span>English</span></div>
 
 <h1 style="font-size:1.6rem;font-weight:700;margin-bottom:0.5rem;">Privacy Policy</h1>
-<p class="meta" style="font-size:0.85rem;color:var(--muted);margin-bottom:2rem;">Effective: October 21, 2026 &nbsp;·&nbsp; First effective: May 5, 2026</p>
+<p class="meta" style="font-size:0.85rem;color:var(--muted);margin-bottom:2rem;">Effective: November 19, 2026 &nbsp;·&nbsp; First effective: May 5, 2026</p>
 
 <div class="highlight">
   Spoilring does not transmit your data to any developer server. All data is stored on your device. iCloud sync (on by default, can be turned off in Settings) is handled entirely by Apple's infrastructure and stores data only in your own iCloud.
@@ -318,9 +318,9 @@
         <td>Until user deletes (*)</td>
       </tr>
       <tr>
-        <td>Purchase records<br>(transaction ID, product, purchase date, device identifier)</td>
+        <td>Purchase records<br>(transaction ID, product, purchase date, refund status, device identifier)</td>
         <td>Auto-generated on slot pack purchase</td>
-        <td>Restoring purchased slots</td>
+        <td>Restoring purchased slots and applying refunds</td>
         <td>Kept in the device Keychain and your iCloud until you delete them</td>
       </tr>
       <tr>
@@ -341,8 +341,8 @@
   <p>All data is stored in an encrypted local database on your device. It is never transmitted to the Operator's servers.</p>
   <h3>iCloud Sync (on by default, can be turned off)</h3>
   <p>On devices signed in to iCloud, iCloud Sync is on by default and syncs your data across your devices through Apple's CloudKit infrastructure. Synced data is stored in your own private iCloud storage under Apple's encryption policies; the Operator cannot access it. You can turn it off at any time in the app's Settings › iCloud Sync.</p>
-  <h3>Update Check</h3>
-  <p>When the app launches, it asks the Apple App Store for the latest version using only the app identifier (bundle ID). No personal information is sent.</p>
+  <h3>Update Check and App Settings</h3>
+  <p>When the app launches, it checks whether an update is needed: it asks the Apple App Store for the latest version using the app identifier (bundle ID), and reads app settings set by the Operator, such as the minimum supported version and the registration limit, from Apple CloudKit's public database. Both are read-only lookups, and no personal information is sent.</p>
 </section>
 
 <section>
