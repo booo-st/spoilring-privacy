@@ -123,12 +123,12 @@
 <header>
   <div class="app-name">Spoilring</div>
   <h1>개인정보처리방침</h1>
-  <p class="meta">시행일: 2026년 11월 19일 &nbsp;·&nbsp; 최초 시행: 2026년 5월 5일</p>
+  <p class="meta">시행일: 2026년 12월 1일 &nbsp;·&nbsp; 최초 시행: 2026년 5월 5일</p>
 </header>
 
 <!-- ── KOREAN VERSION ── -->
 <div class="highlight">
-  Spoilring은 사용자의 데이터를 개발자 서버로 전송하지 않습니다. 모든 데이터는 사용자의 기기에 저장되며, iCloud 동기화(기본 사용, 설정에서 해제 가능)는 Apple의 인프라를 통해 사용자 본인의 iCloud에만 저장됩니다.
+  Spoilring은 사용자가 등록한 전화번호·이름·메모와 연락처를 개발자 서버나 외부로 전송하지 않습니다. 모든 데이터는 사용자의 기기에 저장되며, iCloud 동기화(기본 사용, 설정에서 해제 가능)는 Apple의 인프라를 통해 사용자 본인의 iCloud에만 저장됩니다. 앱을 개선하기 위해 개인을 알아볼 수 없는 앱 사용 통계만 수집하며, 여기에는 전화번호·이름·메모가 포함되지 않습니다.
 </div>
 
 <section>
@@ -139,6 +139,7 @@
     <li>고객·연락처 메모 저장 및 관리</li>
     <li>앱 내 결제 서비스 제공 (Apple 인앱 1회 결제)</li>
     <li>다기기 동기화 (iCloud, 설정에서 해제 가능)</li>
+    <li>앱 품질 개선 및 오류 파악 (개인을 알아볼 수 없는 앱 사용 통계, 3조 참고)</li>
   </ul>
 </section>
 
@@ -188,7 +189,7 @@
     </tbody>
   </table>
   <p>※ 삭제한 번호는 휴지통으로 이동하여 14일간 보관된 후 자동으로 영구 삭제됩니다(휴지통에서 즉시 영구 삭제 가능). 만료일을 지정한 번호는 만료일이 지나면 휴지통으로 이동합니다.</p>
-  <p>위 항목 외에 위치, 카메라, 마이크, 광고 식별자, 행동 추적 데이터는 수집하지 않습니다.</p>
+  <p>위 항목 외에 위치, 카메라, 마이크, 광고 식별자는 수집하지 않으며, 광고 목적의 추적이나 다른 회사의 앱·웹사이트 정보와 연결하는 추적은 하지 않습니다. 개인을 알아볼 수 없는 앱 사용 통계는 3조에서 설명합니다.</p>
 </section>
 
 <section>
@@ -199,6 +200,14 @@
   <p>iCloud에 로그인된 기기에서는 iCloud 동기화가 기본으로 켜져 있으며, Apple의 CloudKit 인프라를 통해 사용자의 다른 기기와 동기화됩니다. 동기화된 데이터는 사용자 본인의 iCloud 개인 저장소에 저장되고 Apple의 암호화 정책이 적용되며, 운영자는 해당 데이터에 접근할 수 없습니다. 앱의 설정 › iCloud 동기화에서 언제든 끌 수 있습니다.</p>
   <h3>업데이트 확인 및 앱 설정</h3>
   <p>앱 실행 시 업데이트가 필요한지 확인하기 위해 Apple App Store에 앱 식별자(번들 ID)로 최신 버전 정보를 조회하고, Apple CloudKit 공개 저장소에서 운영자가 정한 최소 지원 버전과 등록 가능 건수 한도 등 앱 설정을 읽어 옵니다. 두 조회 모두 정보를 읽기만 하며, 이 과정에서 사용자의 개인정보는 전송되지 않습니다.</p>
+  <h3>앱 사용 통계 (개인을 알아볼 수 없는 형태)</h3>
+  <p>앱을 개선하고 오류를 파악하기 위해, 앱 사용 중 아래 정보를 통계 서비스 TelemetryDeck(6조)으로 전송합니다.</p>
+  <ul>
+    <li><strong>기능 사용 기록</strong>: 앱 실행, 첫 사용 안내 진행, 발신자 표시 켜짐 여부, 번호 추가·불러오기 횟수(건수는 구간으로만), 결제 화면 표시와 결제 결과(상품 종류), 오류 종류</li>
+    <li><strong>기기 환경 정보</strong>: 기기 모델, iOS·앱 버전, 언어·지역 설정, 화면 모드·글자 크기 등 접근성 설정</li>
+    <li><strong>설치 식별값</strong>: 앱 설치마다 무작위로 만든 값을 기기에서 되돌릴 수 없게 변환(해시)한 값으로, TelemetryDeck이 한 번 더 변환해 저장합니다. 이름·이메일·Apple ID·광고 식별자와 연결되지 않습니다.</li>
+  </ul>
+  <p>등록한 <strong>전화번호·이름·메모, 연락처, 클립보드 내용은 통계에 포함되지 않으며</strong>, IP 주소는 저장되지 않습니다. 통계는 여러 사용자를 합친 형태로만 확인하며, 특정 개인을 알아보거나 광고에 사용하지 않습니다.</p>
 </section>
 
 <section>
@@ -213,7 +222,7 @@
 
 <section>
   <h2>5. 개인정보 제3자 제공</h2>
-  <p>운영자는 사용자의 개인정보를 제3자에게 제공하지 않습니다. 단, 아래의 경우는 사용자가 직접 선택한 Apple 서비스 경유이므로 제3자 제공에 해당하지 않습니다.</p>
+  <p>운영자는 사용자의 개인정보를 제3자에게 제공하지 않습니다. 단, 아래의 경우는 사용자가 직접 선택한 Apple 서비스 경유이므로 제3자 제공에 해당하지 않습니다. 앱 사용 통계의 처리는 6조를 참고하세요.</p>
   <ul>
     <li><strong>Apple App Store (인앱 결제)</strong>: 슬롯팩 결제 처리 및 영수증 검증은 Apple Inc.가 처리합니다. <a href="https://www.apple.com/legal/privacy/ko/" target="_blank">Apple 개인정보 처리방침</a></li>
     <li><strong>Apple CloudKit (iCloud 동기화)</strong>: iCloud 동기화가 켜져 있는 경우에 해당되며, 데이터는 사용자 본인의 iCloud에 저장됩니다.</li>
@@ -221,8 +230,19 @@
 </section>
 
 <section>
-  <h2>6. 개인정보 처리 위탁</h2>
-  <p>운영자는 현재 개인정보 처리를 외부 업체에 위탁하지 않습니다.</p>
+  <h2>6. 처리 위탁 및 국외 이전</h2>
+  <p>운영자는 사용자가 등록한 데이터의 처리를 외부 업체에 위탁하지 않습니다. 3조의 앱 사용 통계는 개인을 알아볼 수 없는 형태로 처리되지만, 투명하게 알리기 위해 처리 업체와 국외 이전 사항을 아래와 같이 공개합니다.</p>
+  <table>
+    <tbody>
+      <tr><th>처리 업체</th><td>TelemetryDeck GmbH (독일) · <a href="mailto:datenschutz@telemetrydeck.com">datenschutz@telemetrydeck.com</a></td></tr>
+      <tr><th>이전 국가</th><td>유럽연합(독일, 핀란드 등)</td></tr>
+      <tr><th>이전 시기·방법</th><td>앱을 사용할 때 네트워크를 통해 수시로 전송</td></tr>
+      <tr><th>이전 항목</th><td>3조의 앱 사용 통계 (기능 사용 기록, 기기 환경 정보, 설치 식별값)</td></tr>
+      <tr><th>목적</th><td>앱 품질 개선 및 오류 파악</td></tr>
+      <tr><th>보유 기간</th><td>수집일로부터 1년이 지나면 운영자가 삭제합니다. 삭제 후에도 업체의 정책에 따라 백업·장기 보관소에 개인을 알아볼 수 없는 형태로 남을 수 있습니다.</td></tr>
+    </tbody>
+  </table>
+  <p>앱 사용 통계는 앱 기능과 함께 동작하며, 앱을 삭제하면 더 이상 전송되지 않습니다.</p>
 </section>
 
 <section>
@@ -239,7 +259,7 @@
 
 <section>
   <h2>8. 개인정보의 파기</h2>
-  <p>앱에서 삭제한 번호는 휴지통에 14일간 보관된 후 자동으로 영구 삭제되며, 휴지통에서 즉시 영구 삭제할 수도 있습니다. 앱을 삭제하면 기기 내 데이터가 함께 삭제됩니다. iCloud 동기화를 사용한 경우, iPhone 설정 › [사용자 이름] › iCloud › 저장 공간 관리 › Spoilring에서 iCloud에 저장된 데이터를 추가로 삭제할 수 있습니다. 운영자가 보유하는 서버 데이터는 없습니다.</p>
+  <p>앱에서 삭제한 번호는 휴지통에 14일간 보관된 후 자동으로 영구 삭제되며, 휴지통에서 즉시 영구 삭제할 수도 있습니다. 앱을 삭제하면 기기 내 데이터가 함께 삭제됩니다. iCloud 동기화를 사용한 경우, iPhone 설정 › [사용자 이름] › iCloud › 저장 공간 관리 › Spoilring에서 iCloud에 저장된 데이터를 추가로 삭제할 수 있습니다. 운영자는 사용자가 등록한 데이터를 서버에 보관하지 않습니다. 앱 사용 통계는 개인을 알아볼 수 없는 형태라 특정 사용자의 통계만 골라 삭제할 수 없으며, 6조의 보유 기간이 지나면 삭제됩니다.</p>
 </section>
 
 <section>
@@ -269,10 +289,10 @@
 <div class="lang-divider"><span>English</span></div>
 
 <h1 style="font-size:1.6rem;font-weight:700;margin-bottom:0.5rem;">Privacy Policy</h1>
-<p class="meta" style="font-size:0.85rem;color:var(--muted);margin-bottom:2rem;">Effective: November 19, 2026 &nbsp;·&nbsp; First effective: May 5, 2026</p>
+<p class="meta" style="font-size:0.85rem;color:var(--muted);margin-bottom:2rem;">Effective: December 1, 2026 &nbsp;·&nbsp; First effective: May 5, 2026</p>
 
 <div class="highlight">
-  Spoilring does not transmit your data to any developer server. All data is stored on your device. iCloud sync (on by default, can be turned off in Settings) is handled entirely by Apple's infrastructure and stores data only in your own iCloud.
+  Spoilring never sends the phone numbers, names, memos or contacts you register to any developer server or outside party. All data is stored on your device. iCloud sync (on by default, can be turned off in Settings) is handled entirely by Apple's infrastructure and stores data only in your own iCloud. To improve the app, we collect only app usage statistics that cannot identify you, and they never include phone numbers, names or memos.
 </div>
 
 <section>
@@ -283,6 +303,7 @@
     <li>Storing and managing contact memos</li>
     <li>Providing in-app purchase services (one-time slot pack purchases via Apple)</li>
     <li>Multi-device sync via iCloud (can be turned off in Settings)</li>
+    <li>Improving app quality and finding errors (app usage statistics that cannot identify you; see Section 3)</li>
   </ul>
 </section>
 
@@ -332,7 +353,7 @@
     </tbody>
   </table>
   <p>* Deleted numbers are moved to the Trash, kept for 14 days, then permanently deleted automatically (you can also delete them permanently from the Trash right away). Numbers with an expiration date are moved to the Trash once that date passes.</p>
-  <p>We do not collect location, camera, microphone, advertising identifier, or behavioral tracking data.</p>
+  <p>We do not collect location, camera, microphone or advertising identifier data, and we do not track you for advertising or link your data with other companies' apps or websites. App usage statistics that cannot identify you are described in Section 3.</p>
 </section>
 
 <section>
@@ -343,6 +364,14 @@
   <p>On devices signed in to iCloud, iCloud Sync is on by default and syncs your data across your devices through Apple's CloudKit infrastructure. Synced data is stored in your own private iCloud storage under Apple's encryption policies; the Operator cannot access it. You can turn it off at any time in the app's Settings › iCloud Sync.</p>
   <h3>Update Check and App Settings</h3>
   <p>When the app launches, it checks whether an update is needed: it asks the Apple App Store for the latest version using the app identifier (bundle ID), and reads app settings set by the Operator, such as the minimum supported version and the registration limit, from Apple CloudKit's public database. Both are read-only lookups, and no personal information is sent.</p>
+  <h3>App Usage Statistics (cannot identify you)</h3>
+  <p>To improve the app and find errors, the app sends the following information to the analytics service TelemetryDeck (Section 6) while you use it.</p>
+  <ul>
+    <li><strong>Feature usage</strong>: app launches, onboarding progress, whether caller ID is turned on, number additions and imports (counts in ranges only), paywall views and purchase results (product type), error types</li>
+    <li><strong>Device environment</strong>: device model, iOS and app version, language and region settings, display mode and accessibility settings such as text size</li>
+    <li><strong>Installation identifier</strong>: a value randomly generated for each installation and irreversibly transformed (hashed) on your device, then transformed again by TelemetryDeck before storage. It is not linked to your name, email, Apple ID or advertising identifier.</li>
+  </ul>
+  <p>The <strong>phone numbers, names and memos you register, your contacts and your clipboard are never included</strong>, and IP addresses are not stored. We only view statistics combined across many users, and never use them to identify individuals or for advertising.</p>
 </section>
 
 <section>
@@ -357,7 +386,7 @@
 
 <section>
   <h2>5. Third-Party Disclosure</h2>
-  <p>The Operator does not share your personal information with third parties. The following Apple services are used only when you choose to engage them:</p>
+  <p>The Operator does not share your personal information with third parties. The following Apple services are used only when you choose to engage them. For processing of app usage statistics, see Section 6.</p>
   <ul>
     <li><strong>Apple App Store (In-App Purchase)</strong>: Slot pack purchase processing and receipt validation are handled by Apple Inc. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
     <li><strong>Apple CloudKit (iCloud Sync)</strong>: Applies while iCloud sync is on; data is stored in your own iCloud.</li>
@@ -365,8 +394,19 @@
 </section>
 
 <section>
-  <h2>6. Processing Delegation</h2>
-  <p>The Operator does not delegate personal information processing to any external service provider.</p>
+  <h2>6. Processing Delegation and International Transfer</h2>
+  <p>The Operator does not delegate processing of the data you register to any external service provider. The app usage statistics in Section 3 are processed in a form that cannot identify you, but for transparency we disclose the processor and international transfer details below.</p>
+  <table>
+    <tbody>
+      <tr><th>Processor</th><td>TelemetryDeck GmbH (Germany) · <a href="mailto:datenschutz@telemetrydeck.com">datenschutz@telemetrydeck.com</a></td></tr>
+      <tr><th>Destination</th><td>European Union (Germany, Finland, etc.)</td></tr>
+      <tr><th>When and how</th><td>Sent over the network from time to time while you use the app</td></tr>
+      <tr><th>Items</th><td>App usage statistics in Section 3 (feature usage, device environment, installation identifier)</td></tr>
+      <tr><th>Purpose</th><td>Improving app quality and finding errors</td></tr>
+      <tr><th>Retention</th><td>Deleted by the Operator 1 year after collection. Under the processor's policies, copies may remain in its backups and long-term storage afterwards, in a form that cannot identify you.</td></tr>
+    </tbody>
+  </table>
+  <p>App usage statistics work together with the app's features; once you delete the app, nothing more is sent.</p>
 </section>
 
 <section>
@@ -383,7 +423,7 @@
 
 <section>
   <h2>8. Data Deletion</h2>
-  <p>Numbers you delete in the app are kept in the Trash for 14 days and then permanently deleted automatically; you can also delete them permanently from the Trash right away. Deleting the app removes locally stored data. If you used iCloud sync, you can additionally delete Spoilring data stored in iCloud in iPhone Settings › [your name] › iCloud › Manage Storage › Spoilring. The Operator holds no server-side copies of your data.</p>
+  <p>Numbers you delete in the app are kept in the Trash for 14 days and then permanently deleted automatically; you can also delete them permanently from the Trash right away. Deleting the app removes locally stored data. If you used iCloud sync, you can additionally delete Spoilring data stored in iCloud in iPhone Settings › [your name] › iCloud › Manage Storage › Spoilring. The Operator does not keep the data you register on any server. Because app usage statistics cannot identify you, statistics for a specific user cannot be singled out for deletion; they are deleted after the retention period in Section 6.</p>
 </section>
 
 <section>
